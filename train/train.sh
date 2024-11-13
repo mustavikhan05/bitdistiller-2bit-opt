@@ -35,4 +35,5 @@ deepspeed --num_gpus=2 train.py \
     --q_group_size 128 \
     --train_kd True \
     --kd_loss_type "cakld" \
-    --max_train_samples 999999 
+    --max_train_samples 999999 \
+    --clip /kaggle/working/bitdistiller-2bit-opt/quantization/clip_cache/opt-125m/int2-g128.pt
